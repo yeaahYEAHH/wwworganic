@@ -42,7 +42,7 @@ h2{
     background-color: #d26a22;
     border: none;
     border-radius: 100%;
-    background-image: url(/img/Files/shopping-cart.png);
+    background-image: url(../img/Files/shoppingcart.png);
     background-size: 23px 23px;
     background-position: 7px  14px;
     background-repeat: no-repeat;
@@ -101,10 +101,43 @@ a{
 }
 
 .section-main{
-    background-image: url(/img/Files/background\ 1\ screen\ mob.png);
+    background-image: url(/img/Files/background/background1screenmob.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.section-main-image{
+    position: absolute;
+}
+
+.section-main-tomato{
+    right: 121px;
+    bottom: 15px;
+}
+
+.section-main-pepper{
+    left: 28px;
+    bottom: 339px;
+}
+
+.section-main-avacado{
+    right: 33px;
+    top: -100px;
+}
+
+
+
+.section-main-cucumber{
+    left: 700px;
+    top: -141px;
+}
+
+.section-main-beans{
+    left: -10px;
+    bottom: 15px;
 }
 
 .main{
@@ -187,11 +220,12 @@ a{
 }
 
 .main-visual-01{
-    left: 91px;
-    top: 22px;
+    left: 58px;
+    top: 45px;
 }
 
 .main-visual-01::before{
-    left: 91px;
-    top: 22px;
+    left: 0px;
+    top: 0px;
+    bottom: 14px;
 }
