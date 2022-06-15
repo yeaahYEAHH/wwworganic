@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/Files/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Organic</title>
 </head>
 <body>
@@ -46,11 +47,19 @@
                 </div>
                 <div class="main-visual">
                     <div class="main-visual-image">
-                        <img src="img/Files/image-main.png" alt="">
+                        <img class ="main-visual-image-img" src="img/Files/image-main.png" alt="">
                     </div>
                     <button class="main-visual-01 main-visual-btn">
                         Авокадо
                         <span class="main-visual-span">134 руб</span>
+                    </button>
+                    <button class="main-visual-02 main-visual-btn">
+                        Картофель
+                        <span class="main-visual-span">169 руб</span>
+                    </button>
+                    <button class="main-visual-03 main-visual-btn">
+                        Томаты
+                        <span class="main-visual-span">235 руб</span>
                     </button>
                 </div>
             </div>
@@ -61,7 +70,73 @@
         <img class="section-main-image section-main-cucumber" src="img/Files/image cucumber_.png" alt="tomato">
         <img class="section-main-image section-main-beans" src="img/Files/beans.png" alt="tomato">
     </section>
+    <section class="section-stock">
+        <div class="wrapper">
+            <h2 class="title">Что мы <br><span class="span">предлагаем</span></h2>
+            <p class="section-stock-text">Органика - это целостная система производство по-настоящему чистой, натуральной и полезной продукции</p>
+            <div class="slider">               
+                <div class="slider-child">
+                    <div class="slider-item slider-milk">
+                        <div class="slider-text">
+                            <h3 class="slider-test-title">Молочные продукты</h3>
+                            <p class="slider-text-description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. органическое молоко является продуктом органического живодноводствв</p>
+                            <a href="#" class="slider-text-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="slider-child">
+                    <div class="slider-item slider-bakalei">
+                        <div class="slider-text">
+                            <h3 class="slider-test-title">Бакалея</h3>
+                            <p class="slider-text-description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. органическое молоко является продуктом органического живодноводствв</p>
+                            <a href="#" class="slider-text-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-child">
+                    <div class="slider-item slider-meat">
+                        <div class="slider-text">
+                            <h3 class="slider-test-title">Мясо, птицы</h3>
+                            <p class="slider-text-description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. органическое молоко является продуктом органического живодноводствв</p>
+                            <a href="#" class="slider-text-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="slider-child">
+                    <div class="slider-item slider-milk">
+                        <div class="slider-text">
+                            <h3 class="slider-test-title">Молочные продукты</h3>
+                            <p class="slider-text-description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. органическое молоко является продуктом органического живодноводствв</p>
+                            <a href="#" class="slider-text-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-child">
+                    <div class="slider-item slider-bakalei">
+                        <div class="slider-text">
+                            <h3 class="slider-test-title">Бакалея</h3>
+                            <p class="slider-text-description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. органическое молоко является продуктом органического живодноводствв</p>
+                            <a href="#" class="slider-text-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-child">
+                    <div class="slider-item slider-meat">
+                        <div class="slider-text">
+                            <h3 class="slider-test-title">Мясо, птицы</h3>
+                            <p class="slider-text-description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. органическое молоко является продуктом органического живодноводствв</p>
+                            <a href="#" class="slider-text-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <main>
 
@@ -70,7 +145,34 @@
     
     <footer>
 
-    </footer>
+    </footer>   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+          dots: false,
+          infinite: true,
+          arrows: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });</script>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>
